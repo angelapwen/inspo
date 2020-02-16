@@ -127,7 +127,7 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
 
   // MARK: - Private
   func addFlexibleHeader() {
-    let headerText = String(format: "You chose a: \"PLANT\"")
+    let headerText = String(format: "We've detected: \"PLANT\"")
     headerView.resultLabel?.text = headerText
     updateMinMaxHeightForHeaderView()
 

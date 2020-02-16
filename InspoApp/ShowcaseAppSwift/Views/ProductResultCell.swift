@@ -74,6 +74,7 @@ class ProductResultCell: MDCBaseCell {
         
         let storyboard = UIStoryboard(name: "MainViews", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "EnvironmentalistViewController")
+        controller.modalPresentationStyle = .fullScreen 
                 
         self.window?.rootViewController?.presentedViewController?.dismiss(animated: true)
         
