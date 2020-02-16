@@ -67,16 +67,17 @@ class ProductResultCell: MDCBaseCell {
     fatalError("init(coder:) has not been implemented")
   }
     
-    /// Note: asdfasdf
-    func myFunc() {
-        
-    }
-    
-    //
+    /// Dismisses the current view and moves to the next Environmentalist view 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print(touches)
         super.touchesBegan(touches, with: event)
         
+        let storyboard = UIStoryboard(name: "MainViews", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "EnvironmentalistViewController")
+                
+        self.window?.rootViewController?.presentedViewController?.dismiss(animated: true)
+        
+       self.window?.rootViewController?.present(controller, animated: true)
     }
 
   // MARK: - UICollectionReusableView

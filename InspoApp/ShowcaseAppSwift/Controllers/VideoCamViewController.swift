@@ -66,7 +66,8 @@ private let kKeyFileName = "key"
 private let kKeyFileType = "plist"
 
 class VideoCamViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, MDCBottomSheetControllerDelegate {
-  // Views to be added as subviews of current view.
+    
+    // Views to be added as subviews of current view.
   private var previewView: UIView!
   private var overlayView: DetectionOverlayView!
   private var detectingReticle: CameraReticle!
@@ -146,7 +147,6 @@ class VideoCamViewController: UIViewController, AVCaptureVideoDataOutputSampleBu
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
-
     setCameraSelection()
 
     // Set up video processing pipeline.
@@ -778,9 +778,9 @@ class VideoCamViewController: UIViewController, AVCaptureVideoDataOutputSampleBu
    */
   func fakeProductSearchResults() -> [Product] {
     var fakeProductSearchResults: [Product] = []
-    let career1 = Product.init(careerName: "Zoologist", careerDescription: "If you love animals more than plants", careerImageURL: nil)
-    let career2 = Product.init(careerName: "Gardener", careerDescription: "Feeling one with the earth", careerImageURL: nil)
-    let career3 = Product.init(careerName: "Environmentalist", careerDescription: "Advocating for the future of the planet", careerImageURL: nil)
+    let career1 = Product.init(careerName: "Zoologist", careerDescription: "I study all things about animals, like the ones in the zoo.", careerImageURL: nil)
+    let career2 = Product.init(careerName: "Gardener", careerDescription: "I work in the garden, usually for pay.", careerImageURL: nil)
+    let career3 = Product.init(careerName: "Environmentalist", careerDescription: "I help save our world and planet.", careerImageURL: nil)
 
     fakeProductSearchResults.append(career1)
     fakeProductSearchResults.append(career2)
