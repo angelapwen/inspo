@@ -15,6 +15,7 @@ class SnapVideoController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         playVideo()
+        //self.dismiss(animated: false)
     }
 
     private func playVideo() {
@@ -23,10 +24,14 @@ class SnapVideoController: UIViewController {
             return
         }
         let player = AVPlayer(url: URL(fileURLWithPath: path))
+        
+        player.actionAtItemEnd = .pause
+        
         let playerController = AVPlayerViewController()
         playerController.player = player
         present(playerController, animated: true) {
             player.play()
         }
+       // playerController.dismiss(animated: false)
     }
 }

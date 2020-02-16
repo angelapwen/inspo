@@ -50,8 +50,12 @@
 		DD510EF723F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */; };
 		DD510EF923F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */; };
 		DD510EFA23F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */; };
-		DD510EFC23F8AE8100823BA8 /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EFB23F8AE8100823BA8 /* Views.storyboard */; };
-		DD510EFD23F8AE8100823BA8 /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EFB23F8AE8100823BA8 /* Views.storyboard */; };
+		DD510EFC23F8AE8100823BA8 /* MainViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EFB23F8AE8100823BA8 /* MainViews.storyboard */; };
+		DD510F0023F9064900823BA8 /* MainViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EFB23F8AE8100823BA8 /* MainViews.storyboard */; };
+		DD510F0323F90A5300823BA8 /* EnvironmentalistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD510F0223F90A5300823BA8 /* EnvironmentalistViewController.swift */; };
+		DD510F0423F90A5300823BA8 /* EnvironmentalistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD510F0223F90A5300823BA8 /* EnvironmentalistViewController.swift */; };
+		DDF9692623F92113003EF3F0 /* SnapVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9692523F92113003EF3F0 /* SnapVideoController.swift */; };
+		DDF9692723F92113003EF3F0 /* SnapVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9692523F92113003EF3F0 /* SnapVideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +126,7 @@
 		3CA220FF6631C2968022F964 /* Pods_ShowcaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowcaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697D9877396B3D36FA186E58 /* Pods-ShowcaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowcaseApp.debug.xcconfig"; path = "Target Support Files/Pods-ShowcaseApp/Pods-ShowcaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7C3B5EA34329179BE80F9B0F /* Pods-ShowcaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowcaseApp.release.xcconfig"; path = "Target Support Files/Pods-ShowcaseApp/Pods-ShowcaseApp.release.xcconfig"; sourceTree = "<group>"; };
-		AA10D2FE226F745E0057608A /* Showcase App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Showcase App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA10D2FE226F745E0057608A /* Inspo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA10D301226F745E0057608A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA10D302226F745E0057608A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA10D30F226F74610057608A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,7 +148,9 @@
 		DD510EF123F8A1C600823BA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DD510EFB23F8AE8100823BA8 /* Views.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Views.storyboard; sourceTree = "<group>"; };
+		DD510EFB23F8AE8100823BA8 /* MainViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViews.storyboard; sourceTree = "<group>"; };
+		DD510F0223F90A5300823BA8 /* EnvironmentalistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalistViewController.swift; sourceTree = "<group>"; };
+		DDF9692523F92113003EF3F0 /* SnapVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapVideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,7 @@
 		10F4E16E22F4B261005482D1 /* ShowcaseAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				DD510EFE23F9046300823BA8 /* Storyboards */,
 				10F4E19F22F4B296005482D1 /* AppDelegate.swift */,
 				10F4E19E22F4B28B005482D1 /* Models */,
 				10F4E19D22F4B284005482D1 /* Common */,
@@ -255,6 +262,8 @@
 			children = (
 				10F4E1A722F4B2C7005482D1 /* ProductListViewController.swift */,
 				10F4E1A822F4B2C7005482D1 /* VideoCamViewController.swift */,
+				DD510F0223F90A5300823BA8 /* EnvironmentalistViewController.swift */,
+				DDF9692523F92113003EF3F0 /* SnapVideoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,7 +320,7 @@
 		AA10D2FF226F745E0057608A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA10D2FE226F745E0057608A /* Showcase App.app */,
+				AA10D2FE226F745E0057608A /* Inspo.app */,
 				1003B0752290603E00C6F6AE /* ShowcaseAppTests.xctest */,
 				10F4E16D22F4B261005482D1 /* Inspo.app */,
 				10F4E18022F4B262005482D1 /* ShowcaseAppSwiftTests.xctest */,
@@ -382,7 +391,14 @@
 			isa = PBXGroup;
 			children = (
 				DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */,
-				DD510EFB23F8AE8100823BA8 /* Views.storyboard */,
+				DD510EFB23F8AE8100823BA8 /* MainViews.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD510EFE23F9046300823BA8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -488,7 +504,7 @@
 			);
 			name = ShowcaseApp;
 			productName = ShowcaseApp;
-			productReference = AA10D2FE226F745E0057608A /* Showcase App.app */;
+			productReference = AA10D2FE226F745E0057608A /* Inspo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -519,6 +535,7 @@
 					};
 					AA10D2FD226F745E0057608A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -556,10 +573,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD510F0023F9064900823BA8 /* MainViews.storyboard in Resources */,
 				10F4E1BC22F4B498005482D1 /* LaunchScreen.xib in Resources */,
 				DD510EF723F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */,
 				DD510EFA23F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */,
-				DD510EFD23F8AE8100823BA8 /* Views.storyboard in Resources */,
 				10F4E1BB22F4B48F005482D1 /* Images.xcassets in Resources */,
 				DD510EF323F8A1C600823BA8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -586,7 +603,7 @@
 				AA10D33D226F7C930057608A /* LaunchScreen.xib in Resources */,
 				DD510EF623F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */,
 				DD510EF923F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */,
-				DD510EFC23F8AE8100823BA8 /* Views.storyboard in Resources */,
+				DD510EFC23F8AE8100823BA8 /* MainViews.storyboard in Resources */,
 				AA10D341226F7D260057608A /* Images.xcassets in Resources */,
 				DD510EF223F8A1C600823BA8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -689,6 +706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F4E1B722F4B2E1005482D1 /* DetectionOverlayView.swift in Sources */,
+				DDF9692723F92113003EF3F0 /* SnapVideoController.swift in Sources */,
 				10F4E1B622F4B2E1005482D1 /* ConfirmationSpinner.swift in Sources */,
 				10F4E1B922F4B2E1005482D1 /* ProductListHeaderView.swift in Sources */,
 				10F4E1AA22F4B2C7005482D1 /* VideoCamViewController.swift in Sources */,
@@ -698,6 +716,7 @@
 				10F4E1AE22F4B2D5005482D1 /* ODTStatus.swift in Sources */,
 				10F4E1BA22F4B2E1005482D1 /* ProductResultCell.swift in Sources */,
 				10F4E1A022F4B296005482D1 /* AppDelegate.swift in Sources */,
+				DD510F0423F90A5300823BA8 /* EnvironmentalistViewController.swift in Sources */,
 				10F4E1A622F4B2A3005482D1 /* ImageUtilities.swift in Sources */,
 				10F4E1B022F4B2D5005482D1 /* Product.swift in Sources */,
 				10F4E1A522F4B2A3005482D1 /* UIImage+Showcase.swift in Sources */,
@@ -726,6 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B291485227A551B009B5E23 /* FIRImageUtilities.m in Sources */,
+				DDF9692623F92113003EF3F0 /* SnapVideoController.swift in Sources */,
 				AA10D355226F7F880057608A /* FIRConfirmationSpinner.m in Sources */,
 				1B29147C227A54EB009B5E23 /* FIRDetectionOverlayView.m in Sources */,
 				AA10D311226F74610057608A /* main.m in Sources */,
@@ -735,6 +755,7 @@
 				1B29148C227A5554009B5E23 /* FIRProduct.m in Sources */,
 				1B291482227A54F4009B5E23 /* FIRProductResultCell.m in Sources */,
 				AA10D303226F745E0057608A /* AppDelegate.m in Sources */,
+				DD510F0323F90A5300823BA8 /* EnvironmentalistViewController.swift in Sources */,
 				AA10D353226F7F880057608A /* FIRVideoCamViewController.m in Sources */,
 				AA10D35C226F83FE0057608A /* FIRUIUtilities.m in Sources */,
 				AA10D354226F7F880057608A /* FIRCameraReticle.m in Sources */,
@@ -777,6 +798,7 @@
 		1003B07C2290603F00C6F6AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShowcaseAppTests/Info.plist;
@@ -801,6 +823,7 @@
 		1003B07D2290603F00C6F6AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShowcaseAppTests/Info.plist;
@@ -1084,6 +1107,7 @@
 			baseConfigurationReference = 697D9877396B3D36FA186E58 /* Pods-ShowcaseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -1093,8 +1117,11 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebaseml.showcase;
-				PRODUCT_NAME = "Showcase App";
+				PRODUCT_NAME = Inspo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShowcaseAppSwift/Controllers/ShowcaseApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1104,6 +1131,7 @@
 			baseConfigurationReference = 7C3B5EA34329179BE80F9B0F /* Pods-ShowcaseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -1113,8 +1141,10 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebaseml.showcase;
-				PRODUCT_NAME = "Showcase App";
+				PRODUCT_NAME = Inspo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShowcaseAppSwift/Controllers/ShowcaseApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

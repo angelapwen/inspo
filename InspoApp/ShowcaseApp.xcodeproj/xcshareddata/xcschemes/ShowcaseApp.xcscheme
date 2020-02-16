@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA10D2FD226F745E0057608A"
-               BuildableName = "Showcase App.app"
+               BuildableName = "Inspo.app"
                BlueprintName = "ShowcaseApp"
                ReferencedContainer = "container:ShowcaseApp.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA10D2FD226F745E0057608A"
-            BuildableName = "Showcase App.app"
+            BuildableName = "Inspo.app"
             BlueprintName = "ShowcaseApp"
             ReferencedContainer = "container:ShowcaseApp.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA10D2FD226F745E0057608A"
-            BuildableName = "Showcase App.app"
+            BuildableName = "Inspo.app"
             BlueprintName = "ShowcaseApp"
             ReferencedContainer = "container:ShowcaseApp.xcodeproj">
          </BuildableReference>
@@ -81,7 +81,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA10D2FD226F745E0057608A"
-            BuildableName = "Showcase App.app"
+            BuildableName = "Inspo.app"
             BlueprintName = "ShowcaseApp"
             ReferencedContainer = "container:ShowcaseApp.xcodeproj">
          </BuildableReference>
