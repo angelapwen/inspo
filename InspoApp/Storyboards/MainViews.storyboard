@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Environmentalist" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-vw-uON">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bNA-vw-uON" secondAttribute="height" multiplier="9:16" id="Cmd-1I-f6L"/>
-                                    <constraint firstAttribute="width" secondItem="bNA-vw-uON" secondAttribute="height" multiplier="9:16" id="Dcu-kM-Wt7"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPq-hF-VI5" userLabel="Back Button">
                                 <rect key="frame" x="9" y="20" width="60" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -34,15 +27,21 @@
                                 <rect key="frame" x="63" y="538" width="279" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Vlb-nO-Mr4" kind="presentation" id="0Wk-Fl-GMB"/>
+                                    <segue destination="Vlb-nO-Mr4" kind="presentation" modalPresentationStyle="fullScreen" id="0Wk-Fl-GMB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Environmentalist" translatesAutoresizingMaskIntoConstraints="NO" id="9ul-Sn-Uq2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9ul-Sn-Uq2" secondAttribute="height" multiplier="9:16" id="cqr-6K-qKZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bNA-vw-uON" firstAttribute="trailing" secondItem="EQ6-cF-KsT" secondAttribute="trailing" id="LZJ-2v-JEH"/>
-                            <constraint firstItem="bNA-vw-uON" firstAttribute="leading" secondItem="EQ6-cF-KsT" secondAttribute="leading" id="lHU-kK-wIA"/>
-                            <constraint firstItem="bNA-vw-uON" firstAttribute="top" secondItem="EQ6-cF-KsT" secondAttribute="top" id="nN4-ZF-d8i"/>
+                            <constraint firstItem="9ul-Sn-Uq2" firstAttribute="trailing" secondItem="EQ6-cF-KsT" secondAttribute="trailing" id="Fme-xP-gK0"/>
+                            <constraint firstItem="9ul-Sn-Uq2" firstAttribute="top" secondItem="EQ6-cF-KsT" secondAttribute="top" id="tQi-zL-KnG"/>
+                            <constraint firstItem="9ul-Sn-Uq2" firstAttribute="leading" secondItem="EQ6-cF-KsT" secondAttribute="leading" id="xJA-BV-YeG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EQ6-cF-KsT"/>
                     </view>
@@ -56,7 +55,7 @@
             <objects>
                 <viewController storyboardIdentifier="SnapVideoController" title="SnapVideoController" wantsFullScreenLayout="YES" id="Vlb-nO-Mr4" customClass="SnapVideoController" customModule="Inspo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8h8-yw-1OP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YwZ-Db-2Zs"/>

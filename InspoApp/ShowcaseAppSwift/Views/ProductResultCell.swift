@@ -78,7 +78,7 @@ class ProductResultCell: MDCBaseCell {
                 
         self.window?.rootViewController?.presentedViewController?.dismiss(animated: true)
         
-       self.window?.rootViewController?.present(controller, animated: true)
+        self.window?.rootViewController?.present(controller, animated: true)
     }
 
   // MARK: - UICollectionReusableView
