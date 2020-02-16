@@ -778,13 +778,13 @@ class VideoCamViewController: UIViewController, AVCaptureVideoDataOutputSampleBu
    */
   func fakeProductSearchResults() -> [Product] {
     var fakeProductSearchResults: [Product] = []
-    let career1 = Product.init(careerName: "Zoologist", careerDescription: "I study all things about animals, like the ones in the zoo.", careerImageURL: nil)
-    let career2 = Product.init(careerName: "Gardener", careerDescription: "I work in the garden, usually for pay.", careerImageURL: nil)
-    let career3 = Product.init(careerName: "Environmentalist", careerDescription: "I help save our world and planet.", careerImageURL: nil)
+    let career1 = Product.init(careerName: "Zoologist", careerDescription: "Studies animals.", careerImageURL: "https://i.imgur.com/thtOdPI.png")
+    let career2 = Product.init(careerName: "Gardener", careerDescription: "Takes care of plants.", careerImageURL: "https://i.imgur.com/WcrRN5h.png")
+    let career3 = Product.init(careerName: "Environmentalist", careerDescription: "Works to protect the nature.", careerImageURL: "https://i.imgur.com/oqAot7I.png")
 
+    fakeProductSearchResults.append(career3)
     fakeProductSearchResults.append(career1)
     fakeProductSearchResults.append(career2)
-    fakeProductSearchResults.append(career3)
     
     return fakeProductSearchResults
   }
