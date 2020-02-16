@@ -42,7 +42,10 @@ struct Product: Codable {
   var imageURL: String?
   var priceFullText: String?
   var productTypeName: String?
-
+    var careerName: String?
+    var careerDescription: String?
+    var careerImageURL: String?
+    
   /**
    * Generates a list of products from given search response.
    *
@@ -64,6 +67,6 @@ struct Product: Codable {
   }
 
   var description: String {
-    return "Product name: \(productName ?? ""), type: \(productTypeName ?? ""), price:\(priceFullText ?? ""), item Number: \(itemNo ?? "")"
+    return "About Me: \(careerDescription ?? "")"
   }
 }

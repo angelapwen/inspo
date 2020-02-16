@@ -25,16 +25,12 @@ private let kThumbnailSize: CGFloat = 80.0
 
 //* Cell that shows `Product` details from a search result.
 class ProductResultCell: MDCBaseCell {
-  //* Thumbnail of the product.
+  //* Thumbnail of the career.
   private(set) var thumbnailImage = UIImageView()
-  //* Label showing the name of the product.
+  //* Label showing the name of the career.
   private(set) var nameLabel = UILabel()
-  //* Label showing the category of the product.
-  private(set) var categoryLabel = UILabel()
-  //* Label showing the item number of the product.
-  private(set) var itemNumberLabel = UILabel()
-  //* Label showing the price of the product.
-  private(set) var priceLabel = UILabel()
+  //* Label showing the description of the product.
+  private(set) var descriptionLabel = UILabel()
 
   /**
    * Populates the content of the cell with a `Product` model.
@@ -44,13 +40,11 @@ class ProductResultCell: MDCBaseCell {
    */
   func isCellPopulated(with product: Product?) -> Bool {
     guard let product = product else { return false }
-    if let imageURL = product.imageURL, !imageURL.isEmpty {
+    if let imageURL = product.careerImageURL, !imageURL.isEmpty {
       thumbnailImage.pin_setImage(from: URL(string: imageURL))
     }
-    nameLabel.text = product.productName
-    categoryLabel.text = product.productTypeName
-    priceLabel.text = product.priceFullText
-    itemNumberLabel.text = product.itemNo
+    nameLabel.text = product.careerName
+    descriptionLabel.text = product.description
     return true
   }
 
@@ -63,33 +57,34 @@ class ProductResultCell: MDCBaseCell {
     nameLabel.font = MDCBasicFontScheme().subtitle1
     addSubview(nameLabel)
 
-    categoryLabel.numberOfLines = 0
-    categoryLabel.font = MDCBasicFontScheme().body2
-    categoryLabel.textColor = MDCPalette.grey.tint700
-    addSubview(categoryLabel)
-
-
-    priceLabel.numberOfLines = 0
-    priceLabel.font = MDCBasicFontScheme().body1
-    addSubview(priceLabel)
-
-    itemNumberLabel.numberOfLines = 0
-    itemNumberLabel.font = MDCBasicFontScheme().body1
-    addSubview(itemNumberLabel)
+    descriptionLabel.numberOfLines = 0
+    descriptionLabel.font = MDCBasicFontScheme().body2
+    descriptionLabel.textColor = MDCPalette.grey.tint700
+    addSubview(descriptionLabel)
   }
 
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+    
+    /// Note: asdfasdf
+    func myFunc() {
+        
+    }
+    
+    //
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print(touches)
+        super.touchesBegan(touches, with: event)
+        
+    }
 
   // MARK: - UICollectionReusableView
   override func prepareForReuse() {
     super.prepareForReuse()
     thumbnailImage.image = nil
     nameLabel.text = nil
-    priceLabel.text = nil
-    categoryLabel.text = nil
-    itemNumberLabel.text = nil
+    descriptionLabel.text = nil
   }
 
   // MARK: - UIView
@@ -135,31 +130,14 @@ class ProductResultCell: MDCBaseCell {
     }
     currentHeight += nameLabelSize.height + kVerticalPaddingSmall
 
-    let categoryLabelSize = categoryLabel.sizeThatFits(CGSize(width: contentWidth,
+    let categoryLabelSize = descriptionLabel.sizeThatFits(CGSize(width: contentWidth,
                                                                height: CGFloat.greatestFiniteMagnitude))
     if shouldSetFrame {
-      categoryLabel.frame = CGRect(x: startX, y: currentHeight, width: contentWidth,
+      descriptionLabel.frame = CGRect(x: startX, y: currentHeight, width: contentWidth,
                                     height: categoryLabelSize.height)
     }
 
     currentHeight += categoryLabelSize.height + kVerticalPadding
-
-    let priceLabelSize = priceLabel.sizeThatFits(CGSize(width: contentWidth, height: CGFloat.greatestFiniteMagnitude))
-    if shouldSetFrame {
-      priceLabel.frame = CGRect(x: width - kHorizontalPadding - priceLabelSize.width,
-                                 y: currentHeight, width: priceLabelSize.width,
-                                 height: priceLabelSize.height)
-    }
-
-    let maxItemNumberLabelWidth = contentWidth - priceLabelSize.width - kHorizontalPadding
-    let itemNumberLabelSize = itemNumberLabel.sizeThatFits(CGSize(width: maxItemNumberLabelWidth,
-                                                                  height: CGFloat.greatestFiniteMagnitude))
-    if shouldSetFrame {
-      itemNumberLabel.frame = CGRect(x: startX, y: currentHeight,
-                                     width: maxItemNumberLabelWidth, height: itemNumberLabelSize.height)
-    }
-
-    currentHeight += max(itemNumberLabelSize.height, priceLabelSize.height) + kVerticalPadding
 
     return max(currentHeight, kThumbnailSize + 2 * kVerticalPadding)
   }

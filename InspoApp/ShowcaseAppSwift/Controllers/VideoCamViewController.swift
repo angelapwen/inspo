@@ -778,12 +778,14 @@ class VideoCamViewController: UIViewController, AVCaptureVideoDataOutputSampleBu
    */
   func fakeProductSearchResults() -> [Product] {
     var fakeProductSearchResults: [Product] = []
-    for index in 0..<kFakeProductSearchResultCount {
-      let product = Product.init(productName: String(format: kFakeProductNameFormat, index + 1),
-                                 score: nil, itemNo: kFakeProductPriceText, imageURL: nil,
-                                 priceFullText: kFakeProductPriceText, productTypeName: kFakeProductTypeName)
-      fakeProductSearchResults.append(product)
-    }
+    let career1 = Product.init(careerName: "Zoologist", careerDescription: "If you love animals more than plants", careerImageURL: nil)
+    let career2 = Product.init(careerName: "Gardener", careerDescription: "Feeling one with the earth", careerImageURL: nil)
+    let career3 = Product.init(careerName: "Environmentalist", careerDescription: "Advocating for the future of the planet", careerImageURL: nil)
+
+    fakeProductSearchResults.append(career1)
+    fakeProductSearchResults.append(career2)
+    fakeProductSearchResults.append(career3)
+    
     return fakeProductSearchResults
   }
 }
