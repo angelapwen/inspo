@@ -41,7 +41,7 @@ private let kThumbnailPaddingAround: CGFloat = 24.0
 //* The thumbnail will fade out when it reaches this threshhold from screen edge.
 private let kThumbnailFadeOutEdgeThreshhold: CGFloat = 200.0
 //* Number of faked product search results.
-private let kFakeProductSearchResultCount = 10
+private let kFakeProductSearchResultCount = 3
 // Chip message related values.
 private let kChipBackgroundAlpha: CGFloat = 0.6
 private let kChipCornerRadius: CGFloat = 8.0

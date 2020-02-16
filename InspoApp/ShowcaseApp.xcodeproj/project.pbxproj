@@ -46,6 +46,12 @@
 		AA10D35C226F83FE0057608A /* FIRUIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10D35B226F83FE0057608A /* FIRUIUtilities.m */; };
 		DD510EF223F8A1C600823BA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF123F8A1C600823BA8 /* GoogleService-Info.plist */; };
 		DD510EF323F8A1C600823BA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF123F8A1C600823BA8 /* GoogleService-Info.plist */; };
+		DD510EF623F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */; };
+		DD510EF723F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */; };
+		DD510EF923F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */; };
+		DD510EFA23F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */; };
+		DD510EFC23F8AE8100823BA8 /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EFB23F8AE8100823BA8 /* Views.storyboard */; };
+		DD510EFD23F8AE8100823BA8 /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD510EFB23F8AE8100823BA8 /* Views.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +142,9 @@
 		C66A7068B01ED55E6A98B62F /* Pods-ShowcaseAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowcaseAppSwift.release.xcconfig"; path = "Target Support Files/Pods-ShowcaseAppSwift/Pods-ShowcaseAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 		C8F53EE2E445FC334026C28B /* Pods-ShowcaseAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowcaseAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-ShowcaseAppSwift/Pods-ShowcaseAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DD510EF123F8A1C600823BA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD510EFB23F8AE8100823BA8 /* Views.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Views.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +294,8 @@
 		AA10D2F5226F745E0057608A = {
 			isa = PBXGroup;
 			children = (
+				DD510EF823F8ADBE00823BA8 /* GoogleService-Info.plist */,
+				DD510EF423F8AD0800823BA8 /* Storyboards */,
 				DD510EF123F8A1C600823BA8 /* GoogleService-Info.plist */,
 				AA10D300226F745E0057608A /* ShowcaseApp */,
 				1003B0762290603E00C6F6AE /* ShowcaseAppTests */,
@@ -365,6 +376,15 @@
 				AA10D35B226F83FE0057608A /* FIRUIUtilities.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DD510EF423F8AD0800823BA8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD510EF523F8AD2F00823BA8 /* LaunchScreen.storyboard */,
+				DD510EFB23F8AE8100823BA8 /* Views.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E2704EAF66EDB2F714579338 /* Frameworks */ = {
@@ -537,6 +557,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F4E1BC22F4B498005482D1 /* LaunchScreen.xib in Resources */,
+				DD510EF723F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */,
+				DD510EFA23F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */,
+				DD510EFD23F8AE8100823BA8 /* Views.storyboard in Resources */,
 				10F4E1BB22F4B48F005482D1 /* Images.xcassets in Resources */,
 				DD510EF323F8A1C600823BA8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -561,6 +584,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA10D33D226F7C930057608A /* LaunchScreen.xib in Resources */,
+				DD510EF623F8AD2F00823BA8 /* LaunchScreen.storyboard in Resources */,
+				DD510EF923F8ADBE00823BA8 /* GoogleService-Info.plist in Resources */,
+				DD510EFC23F8AE8100823BA8 /* Views.storyboard in Resources */,
 				AA10D341226F7D260057608A /* Images.xcassets in Resources */,
 				DD510EF223F8A1C600823BA8 /* GoogleService-Info.plist in Resources */,
 			);
