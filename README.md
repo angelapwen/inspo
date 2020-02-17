@@ -8,4 +8,4 @@
 5. Build and run the app on a physical device
 
 ## Video Walkthrough
-![Video walkthrough](demos/video-walkthrough.gif]
+![Video walkthrough](demos/video-walkthrough.gif)
