@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let videoCamViewController = VideoCamViewController()
 
     UIApplication.shared.isIdleTimerDisabled = true
+    
+    Thread.sleep(forTimeInterval: 0.7)
 
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = UIColor.white
