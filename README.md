@@ -6,3 +6,6 @@
 3. [Create a Firebase project in the Firebase console, add a new iOS app to your Firebase project with a new bundle ID](https://firebase.google.com/docs/ios/setup)
 4. Download the GoogleService-Info.plist from the newly added app and add it to the ShowcaseApp project in Xcode. Remember to check Copy items if needed and select Create folder references.
 5. Build and run the app on a physical device
+
+## Video Walkthrough
+<img src='https://i.imgur.com/IPDbT3E.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
