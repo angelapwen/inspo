@@ -8,4 +8,4 @@
 5. Build and run the app on a physical device
 
 ## Video Walkthrough
-<img src='https://i.imgur.com/IPDbT3E.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video walkthrough](demos/video-walkthrough.gif]
